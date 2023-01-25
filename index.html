@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Properties</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3ea53c1d6b.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg  navbar-dark">
+        <a class="navbar-brand" href="">Learn-CSS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Cascading Style Sheet.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button">CSS Properties</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button">Examples</button>
+        </div>
+        <div class="col-lg-6">
+          <pre>
+          <p>             I've covered a few CSS properties now. 
+             In this section, I'll start to look at common
+             CSS properties that you'll use to style your
+             HTML elements.
+            
+            The following properties and their values:
+            
+            1.Color
+            2.Font Size
+            3.Background Color
+            4.Background
+            5.Height/Width
+            6.Box Model (Margin/Padding)
+            7.Border
+            8.Border Radius</pre>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h3 class="feature-title">Color</h3>
+          <p>The most common property is color. The color property allows us to specify the text color of an HTML element. This applies to any HTML element that has text content including &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;a&gt; and more.</p>
+          <pre>
+          /* Hex Value */
+           color: #000000;
+
+            /* RGBA */
+           color: rgba(0, 0, 0, 0.3);
+
+           /* Named Colors */
+             color: black;
+          </pre>
+        </div>
+        <div class="col">
+          <h3 class="feature-title">Font Size</h3>
+          <p>The font-size property allows us to change the size of the font for any text based content. This includes &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;a&gt; and more. <br>
+          There are a couple different ways to specify the value of font-size. The most basic unit: pixel (px).</p> <br>
+          Example:
+          <pre>
+            a {
+              font-size: 48px;
+            }
+          </pre>
+        </div>
+        <div class="col">
+          <h3 class="feature-title">Background Color.</h3>
+          <p>The background-color property allows you to set the background color of an HTML element. Just like text color, the value of this property can be a hex value, rgba or named color..</p>
+          <p>The background color can be set as:</p> <br>
+          Example:
+          <pre>
+            h1 {
+              background-color: #FFB300;
+            }
+          </pre>
+        </div>
+        <div class="col">
+          <h3 class="feature-title">Height/Width</h3>
+          <p>The height and width properties specify the height and width of a HTML element respectively. There are many different values you can apply to both of these properties, but for this tutorial we'll focus on pixels (px) and percentages (%).</p>
+          <b>Example:</b>
+        <pre>
+          p {
+            background-color: blue;
+            height: 250px;
+            width: 500px;
+          }
+        </pre>
+        </div>  
+        <div class="col">
+          <h3 class="feature-title">Border</h3>
+          <p>The border property allows you set a border for your HTML element. We can create a border around our <img> element with the following syntax:</p>
+        <b>Example:</b>
+        <pre>
+        img {
+          border: 5px solid #FF6DBA;
+        }
+        </pre>
+        <b>Note:</b>The second value solid describes the type of border you want.
+        </div>  
+        <div class="col">
+          <h3 class="feature-title">Background Image</h3>
+          <p>The background-image property allows us to add a background image to an HTML element.</p>
+          <b>Let's look at the syntax:</b> <br>
+          h1 { <br>
+            height: 300px; <br>
+            color: white; <br>
+            border: 1px solid black; <br>
+            background-image: url("img.jpg"); <br>
+          }
+        </div>  
+      </div>
+    </div>
+  </section>
+
+  <section class="animate-section" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner"><br><br>
+        <h1><em>The Box Model</em></h1>
+        <div class="carousel-item active container-fluid">
+          <p class="testimonial-text">When a browser displays your HTML elements, each element is displayed as a rectangular box.
+             CSS is then applied to the box to style the HTML element.
+            <br>
+            The box model refers to the box layout of each HTML element. Each box consists of the following:
+            <br>
+            1.Content - The actual content (text, images) of the HTML element. <br>
+            2.Padding - Defined by the padding property. In-between the border and content of an element. Is transparent. <br>
+            3.Border - Defined by the border property. Surrounds the padding and content of an element. <br>
+            4.Margin - Defined by the margin property. Adds space between the border and other HTML elements. Is transparent. <br>
+            <br>
+            we have different values for the margin and padding of each edge.
+            <pre>
+            If we want to add a margin or padding for a specific edge we can use the following CSS property names:
+            
+            margin-top
+            margin-left
+            margin-bottom  
+            margin-right
+            padding-top 
+            padding-left 
+            padding-bottom  
+            padding-right
+            </pre>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="white-section" id="pricing">
+    <h2 class="section-heading">CSS Flex Box</h2>
+    <p>Before the Flexbox Layout module, there were four layout modes:
+      <p> Block, for sections in a webpage</p>
+      <p>Table, for two-dimensional table data</p>
+      <p>Positioned, for explicit position of an element</p>
+      <b>Example: 
+      .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+      }</b>
+      
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Flex Container</h3>
+          </div>
+          <div class="card-body">
+            <h6>The flex container becomes flexible by setting the display property to flex:</h6>
+            <p>The flex container properties are:</p>
+            <p>flex-direction</p>
+            <p>flex-wrap</p>  
+            <p>flex-flow</p>  
+            <p>justify-content</p>  
+            <p>align-items</p>  
+            <p>align-content</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Flex Items</h3>
+          </div>
+
+          <div class="card-body">
+            <h6>Child Elements (Items)</h6>
+            <p>The direct child elements of a flex container automatically becomes flexible (flex) items.The flex item properties are:</p>
+            
+            <p>order</p> 
+            <p>flex-grow</p>  
+            <p>flex-shrink</p>  
+            <p>flex-basis</p>  
+            <p> flex</p>
+            <p>align-self</p>    
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Flex Responsive</h3>
+          </div>
+
+          <div class="card-body">
+            <h6>Two-Column Layout</h6>
+            <p>for most screen sizes, and a one-column layout for small screen sizes (such as phones and tablets)</p>
+            <pre>Example:
+            .flex-container {
+              display: flex;
+              flex-direction: row;
+            }
+            /* Responsive layout*/
+            @media (max-width: 800px) {
+              .flex-container {
+                flex-direction: column;
+              }
+            }</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bottom-container">
+    <div class="social-media">
+  <a href="https://www.linkedin.com/in/sofiya-shaik-00314224a/" target="_blank"<i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.instagram.com/calc.technologies/" target="_blank"<i class="fab fa-instagram"></i></a>
+  <a href="https://github.com/sofiyacti053" target="_blank"<i class="fab fa-github"></i></a>
+  <p class="copy-right">&copy; 2023 Sofiya Shaik.</p> 
+  </div>
+</div>
+
+</body>
+</html>
+  
